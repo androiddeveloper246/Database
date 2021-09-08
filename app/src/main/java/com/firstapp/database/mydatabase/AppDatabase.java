@@ -1,0 +1,13 @@
+package com.firstapp.database.mydatabase;
+
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
+
+@Database(entities = {Student.class}, version = 1)
+public abstract class AppDatabase extends RoomDatabase {
+
+
+    public abstract DatabaseQuery myDbQueries();
+
+
+}
